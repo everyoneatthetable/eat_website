@@ -1,0 +1,50 @@
+<div id="insta-container">
+
+    <ul id="instafeed">
+        {% for i in (0..3) %}
+            <li>
+                <a href="https://www.instagram.com/{{ include.username }}/">
+                    <img src="https://profilepageimages.usecue.com/images/{{ include.username }}/small/{{ i }}.jpg" alt="Instagram picture {{ i | plus:1 }}" />
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<style>
+    #insta-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #instafeed {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* to powinno rozdzielić obrazki w rzędzie */
+        width: 100%;
+        max-width: 800px; /* możesz dostosować tę wartość, aby kontrolować maksymalną szerokość */
+        margin: 0 auto; 
+        padding: 0;
+        list-style: none;
+    }
+
+#instafeed li {
+    width: calc(50% - 10px); /* 50% szerokości minus niewielki margines */
+    height: 300px; /* stała wysokość; możesz dostosować tę wartość */
+    margin: 5px; /* mały margines dla oddechu */
+    position: relative;
+    overflow: hidden;
+}
+
+#instafeed li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+</style>
+
+
