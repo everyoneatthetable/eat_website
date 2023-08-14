@@ -46,7 +46,7 @@
     background-color: white;
     position: fixed;
     top: 10px;
-    left: 100;
+    
     z-index: 1000;
 
     opacity: 0;
@@ -161,6 +161,7 @@
   opacity: 1;
   visibility: visible;
   top: 0px;
+  margin-right: 100px;
 }
 
 .menu__list {
@@ -172,10 +173,18 @@
   margin-right: 80px;
 
 
+
+
   .menu__list__item {
     margin-bottom: 24px;
   }
 
+
+
+.menu--open .menu__list {
+
+  margin-right: 80px;
+}
   .menu__list__item__link,
   .menu__cta__link {
     font-size: $h4-size-small;
@@ -206,7 +215,7 @@
     }
 
     .menu__list__item__link {
-      font-size: 14px;
+      font-size: 15px;
       line-height: 18px;
       white-space: nowrap;
       display: inline-block;

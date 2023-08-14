@@ -4,26 +4,26 @@
   <div class="wrap">
     <div class="contact__wrap">
       <header class="contact__header">
-        <h2 class="title">Get In Touch</h2>
-        <p class="subtitle--light">Prefer using email? Say hi at <a
+        <h2 class="title">Napisz do nas</h2>
+        <p class="subtitle--light">Wolisz skontaktować się z nami bezpośrednio przez maila? Napisz tu <a
             href="mailto: {{ site.data.settings.contact_settings.email_address }}">{{ site.data.settings.contact_settings.email_address }}</a>
         </p>
       </header>
 
       <form method="POST" action="{{ site.data.settings.contact_settings.form_action }}" class="contact__form">
         <div class="input-group">
-          <label for="name">Your Name</label>
-          <input type="text" name="name" id="name" placeholder="What should I call you?" />
+          <label for="name">Twoje imię</label>
+          <input type="text" name="name" id="name" placeholder="" />
         </div>
 
         <div class="input-group">
-          <label for="email">Your Email</label>
-          <input type="email" name="email" id="email" placeholder="What's your email address?" />
+          <label for="email">Twój adres mailowy</label>
+          <input type="email" name="email" id="email" placeholder="" />
         </div>
 
         <div class="input-group">
-          <label for="message">Your Message</label>
-          <textarea name="message" id="message" placeholder="What’s on your mind?" rows="4"></textarea>
+          <label for="message">Wiadomość</label>
+          <textarea name="message" id="message" placeholder="" rows="4"></textarea>
         </div>
 
         <input type="hidden" name="_next" value="{{ site.data.settings.contact_settings.confirmation_url }}" />
