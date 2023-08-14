@@ -1,6 +1,6 @@
 ---
-title: Thank you!
-subtitle: Your message was sent successfully.
+title: Dziękujemy!!
+subtitle: Twoja wiadomość została wysłana.
 description: 
 featured_image: 
 ---
