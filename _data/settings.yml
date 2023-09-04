@@ -15,8 +15,8 @@ menu_settings:
       url: '/people/'
     - title: 'Projekty'
       url: '/projects/'
-    - title: 'Blog'
-      url: '/blog/'
+    # - title: 'Blog'
+    #   url: '/blog/'
 
 
 
